@@ -1,0 +1,26 @@
+<annotation>
+	<folder>compress</folder>
+	<filename>968.jpg</filename>
+	<path>/home/sudz/Desktop/vex_parts-v3/parts/bigspacer/compress/968.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>400</width>
+		<height>300</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>1.0spacer</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>239</xmin>
+			<ymin>92</ymin>
+			<xmax>308</xmax>
+			<ymax>154</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>96.jpg</filename>
+	<path>/home/sudz/Desktop/vex_parts-v3/parts/screw/compress/96.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>screw2</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>482</xmin>
+			<ymin>88</ymin>
+			<xmax>619</xmax>
+			<ymax>166</ymax>
+		</bndbox>
+	</object>
+</annotation>

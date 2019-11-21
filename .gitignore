@@ -1,0 +1,7 @@
+models/train
+models/tf_records
+models/images
+models/checkpoints
+models/
+*.jpg
+*.record

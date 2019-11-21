@@ -1,0 +1,5 @@
+  }
+  label_map_path: "annotations/label_map.pbtxt"
+  shuffle: false
+  num_readers: 1
+}

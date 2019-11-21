@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>144.jpg</filename>
+	<path>/home/sudz/Desktop/vex_parts-v2 (copy)/models/images/144.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>screw2</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>214</xmin>
+			<ymin>318</ymin>
+			<xmax>310</xmax>
+			<ymax>481</ymax>
+		</bndbox>
+	</object>
+</annotation>
