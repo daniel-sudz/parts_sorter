@@ -16,4 +16,5 @@ cd parts
 python path_parser.py
 cd ..
 cd models
+CUDA_VISIBLE_DEVICES=0
 python research/object_detection/model_main.py -model_dir=train --logtostderr --train_dir=train --pipeline_config_path=config.txt

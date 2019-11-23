@@ -1,0 +1,26 @@
+<annotation>
+	<folder>compress</folder>
+	<filename>32.jpg</filename>
+	<path>/home/sudz/Desktop/vex_parts-v3/parts/bearing_flat/compress/32.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>600</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bearing_flat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>309</xmin>
+			<ymin>258</ymin>
+			<xmax>704</xmax>
+			<ymax>397</ymax>
+		</bndbox>
+	</object>
+</annotation>

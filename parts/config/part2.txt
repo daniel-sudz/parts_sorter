@@ -2,6 +2,7 @@
   label_map_path: "annotations/label_map.pbtxt"
 }
 eval_config: {
+  num_visualizations: 65
   num_examples: 65
   # Note: The below line limits the evaluation process to 10 evaluations.
   # Remove the below line to evaluate indefinitely.

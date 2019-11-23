@@ -171,7 +171,7 @@ def main(_):
   random.seed(42)
   random.shuffle(examples_list)
   num_examples = len(examples_list)
-  num_train = int(0.99 * num_examples)
+  num_train = int(0.97 * num_examples)
   train_examples = examples_list[:num_train]
   val_examples = examples_list[num_train:]
   logging.info('%d training and %d validation examples.',
