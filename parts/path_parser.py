@@ -14,7 +14,7 @@ os.chdir(current_path)
 #print("enter the xmls folder path")
 #f_path = str(input())
 
-def renaming(f_path):	
+def renaming(f_path):	s
 	print("adjusting annotated files based on folder structure")
 	final_path = os.path.join(os.getcwd(), f_path)
 	image_dir = os.path.join(str(Path(final_path).parents[1]), "compress")
@@ -28,7 +28,7 @@ def renaming(f_path):
 			xml_root = xml_tree.getroot()
 			found_path = xml_root.find('path')
 
-			print(found_path.text)
+			found_path = xml_root.find('path')
 			found_path.text = correct_file_name.replace('xml','jpg')
 			print(found_path.text)
 			print(current_file)

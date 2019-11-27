@@ -1,7 +1,7 @@
 <annotation>
 	<folder>images</folder>
-	<filename>389.jpg</filename>
-	<path>/home/sudz/Desktop/vex_parts-v3/parts/screw/compress/389.jpg</path>
+	<filename>388.jpg</filename>
+	<path>gs://sudz/parts_sorter/parts/screw/compress/389.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -17,10 +17,10 @@
 		<truncated>0</truncated>
 		<difficult>0</difficult>
 		<bndbox>
-			<xmin>472</xmin>
-			<ymin>198</ymin>
-			<xmax>555</xmax>
-			<ymax>422</ymax>
+			<xmin>305</xmin>
+			<ymin>255</ymin>
+			<xmax>471</xmax>
+			<ymax>443</ymax>
 		</bndbox>
 	</object>
 </annotation>

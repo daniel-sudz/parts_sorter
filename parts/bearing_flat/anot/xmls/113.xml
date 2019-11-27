@@ -1,7 +1,7 @@
 <annotation>
 	<folder>compress</folder>
 	<filename>113.jpg</filename>
-	<path>/home/sudz/Desktop/vex_parts-v3/parts/bearing_flat/compress/113.jpg</path>
+	<path>gs://sudz/parts_sorter/parts/bearing_flat/compress/113.jpg</path>
 	<source>
 		<database>Unknown</database>
 	</source>
