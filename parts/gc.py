@@ -78,6 +78,9 @@ def datasplit():
         return "TEST"
 
 def xml_to_csv_compiler(extracted):
+    return_csv_lines = []
+    #The category must be the same for all bboxes in a given image 
+    element_catagory = datasplit()
     for element in extracted: 
         element_width = element[0][1]
         #print('element width' +  '\n' + element_width)
@@ -91,10 +94,11 @@ def xml_to_csv_compiler(extracted):
 
         element_path = element[0][3]
         element_label = element[0][0]
-        element_catagory = datasplit()
+
         csv_line = element_catagory + ',' + element_path + ',' + element_label + ',' + x_relative_min + ',' + y_relative_min + ',,,' + x_relative_max + ',' + y_relative_max + ',,'
+        return_csv_lines.append(csv_line)
         #print(csv_line)
-        return csv_line
+    return return_csv_lines
 
 def xml_to_csv_linker(xml_target):
     csv_lines_for_dir = []
@@ -103,9 +107,10 @@ def xml_to_csv_linker(xml_target):
         if (xml_file.endswith('xml')):
             full_xml_path = os.path.join(xml_target, xml_file)  
             xml_extracted_metadata = xml_to_csv_extraction(full_xml_path)
-            xml_csv_line = str(xml_to_csv_compiler(xml_extracted_metadata))
-            dprint(xml_csv_line)
-            csv_lines_for_dir.append(xml_csv_line)
+            xml_csv_lines = xml_to_csv_compiler(xml_extracted_metadata)
+            for xml_csv_line in xml_csv_lines: 
+                dprint(xml_csv_line)
+                csv_lines_for_dir.append(xml_csv_line)
     return csv_lines_for_dir
 
 def renaming(f_path):
@@ -151,15 +156,20 @@ for paths in current_dirs:
     if (os.path.isdir(target)):
         # Runs xmls converter to google automl format  
         csv_lines_generated = xml_to_csv_linker(target)
-    for every_csv_line in csv_lines_generated:
-        all_generated_csv_lines.append(every_csv_line)
+        for every_csv_line in csv_lines_generated:
+            all_generated_csv_lines.append(every_csv_line)
 #dprint(all_generated_csv_lines)
 
+
+try: 
+    os.remove("labels.csv")
+except: 
+    dprint("Labels.csv not delteing as it did not exist")
 fout = open("labels.csv", "w")
 for final_generated_csv_lines in all_generated_csv_lines:
     if (final_generated_csv_lines != all_generated_csv_lines[-1]):
         fout.write(final_generated_csv_lines + '\n')
     else: 
-        fout.write(final_generated_csv_lines + '\n')
+        fout.write(final_generated_csv_lines)
 fout.close()
 
